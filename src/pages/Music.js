@@ -192,7 +192,7 @@ export default class Music extends React.Component {
         case "Hall of Fame":
           track = twistter;
           break;
-        case "Perect":
+        case "Perfect":
           track = freebird;
           break;
         default:
