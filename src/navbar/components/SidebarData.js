@@ -11,7 +11,7 @@ export const SidebarData = [
   },
 
   {
-    title: "Feel low?",
+    title: "Time Out",
     path: "/Music",
     icon: <IoIcons.IoIosMusicalNotes />,
     cName: "nav-text",

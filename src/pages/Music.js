@@ -3,17 +3,19 @@ import Layout from "./Layout";
 import React from "react";
 import "./music-style.css";
 
-const goeasy = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
-const dreams = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3";
+const goeasy =
+  "https://mp3by.in/siteuploads/files/sfd12/5818/Imagine%20Dragons%20-%20Thunder(mp3by.in).mp3";
+const dreams =
+  "https://dwn.pagol.world/siteuploads/files/sfd13/6181/Believer(Mr-Jatt1.com).mp3";
 
 const chillout =
-  "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3";
+  "https://dwn.pagol.world/siteuploads/files/sfd13/6183/Roar(Mr-Jatt1.com).mp3";
 
 const twistter =
-  "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-13.mp3";
+  "https://mp3.filmisongs.com/Hall%20of%20Fame%20-%20The%20Script.mp3";
 
 const freebird =
-  "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-15.mp3";
+  "https://mp3by.in/siteuploads/files/sfd22/10505/Perfect%20-%20Ed%20Sheeran(mp3by.in).mp3";
 
 function getTime(time) {
   if (!isNaN(time)) {
@@ -61,32 +63,28 @@ export default class Music extends React.Component {
     const playlist = [
       {
         id: 1,
-        title: "Go Easy",
-        url:
-          "https://thumbs-prod.si-cdn.com/Vj7Cmc62xkQLwQZLiX1SbOV89ik=/420x240/https://public-media.si-cdn.com/filer/cd/0e/cd0efbec-bc15-4f38-894a-7e0e6f5968b8/campfire_edit.jpg",
+        title: "Thunder",
+        url: "https://thumbs-prod.si-cdn.com/Vj7Cmc62xkQLwQZLiX1SbOV89ik=/420x240/https://public-media.si-cdn.com/filer/cd/0e/cd0efbec-bc15-4f38-894a-7e0e6f5968b8/campfire_edit.jpg",
       },
       {
         id: 2,
-        title: "Dreams",
-        url:
-          "https://images.pexels.com/photos/96380/pexels-photo-96380.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        title: "Believer",
+        url: "https://images.pexels.com/photos/96380/pexels-photo-96380.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       },
       {
         id: 3,
-        title: "Chill Out",
-        url:
-          "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Ffree-vector%2Fgradient-liquid-abstract-background_13403524.htm&psig=AOvVaw0F90tdLjVE0C10atG5Nzai&ust=1620573581840000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKi5v7ixuvACFQAAAAAdAAAAABAD",
+        title: "Roar",
+        url: "https://www.iot-now.com/wp-content/uploads/2020/06/lion-3317670_640.jpg",
       },
       {
         id: 4,
-        title: "Twistter",
-        url: "https://i.ytimg.com/vi/VJ52yJwN_K0/maxresdefault.jpg",
+        title: "Hall of Fame",
+        url: "http://a10.gaanacdn.com/images/albums/73/64273/crop_480x480_64273.jpg",
       },
       {
         id: 5,
-        title: "Free Bird",
-        url:
-          "https://www.laurenswilliam.nl/wp-content/uploads/2016/09/Chill-music-update-1.jpeg",
+        title: "Perfect",
+        url: "https://www.laurenswilliam.nl/wp-content/uploads/2016/09/Chill-music-update-1.jpeg",
       },
     ].map((item) => {
       return (
@@ -182,19 +180,19 @@ export default class Music extends React.Component {
     if (this.state.currentSong !== prevState.currentSong) {
       let track;
       switch (this.state.currentSong) {
-        case "Go Easy":
+        case "Thunder":
           track = goeasy;
           break;
-        case "Dreams":
+        case "Believer":
           track = dreams;
           break;
-        case "Chill Out":
+        case "Roar":
           track = chillout;
           break;
-        case "Twistter":
+        case "Hall of Fame":
           track = twistter;
           break;
-        case "Free Bird":
+        case "Perect":
           track = freebird;
           break;
         default:
